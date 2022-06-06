@@ -132,6 +132,7 @@
     cursor: pointer;
     transition: top 0.3s;
     transition: opacity 0.3s;
+    display: none;
 }
 
 .logo-img {
