@@ -1,0 +1,136 @@
+:root{
+    --header-top-height: 35px;
+    --header-nav-height: 40px;
+    --header-height: var(--header-nav-height) + var(--header-top-height);
+    --text-color: #6e6d7a;
+    --primary-color: #876445;
+    --second-color: #CA965C;
+    --third-color: #EEC373;
+    --fourth-color: #F4DFBA;
+}
+
+* {
+    box-sizing: inherit
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Haas Grot Text R Web", "Roboto", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.btn{
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 555;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.btn--no-margin{
+    margin-left: 0;
+}
+
+.btn:hover{
+    background-color: var(--second-color);
+}
+
+.separate{
+    margin: 5px 0;
+    border-top: 1px solid #e7e7e9;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fce4ed;
+}
+
+/* Box drop */
+.box-drop {
+    position: relative;
+    z-index: 1;
+}
+
+.box-drop__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #e7e7e9;
+    border-radius: 8px;
+}
+
+.box-drop__btn ion-icon{
+    font-size: 13px;
+    color: var(--text-color);
+    padding: 10px 16px 10px 8px;
+}
+
+.box-drop__btn:hover{
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.box-drop__text {
+    font-size: 15px;
+    color: var(--text-color);
+    padding: 10px 16px;
+}
+
+.box-drop__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 8px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 4%);
+    display: none;
+}
+
+.box-drop__item {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 444;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.box-drop__item:hover{
+    background-color: #e7e7e9;
+}
+
+.box-drop__item--active {
+    color: var(--primary-color);
+}
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
