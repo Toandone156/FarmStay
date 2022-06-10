@@ -132,7 +132,7 @@
     cursor: pointer;
     transition: top 0.3s;
     transition: opacity 0.3s;
-    display: none;
+    /* display: none; */
 }
 
 .logo-img {
@@ -279,7 +279,7 @@
     color: var(--primary-color);
 }
 
-/* Architecture */
+/* Architecture*/
 
 .architecture {
     margin: 50px 0;
@@ -310,12 +310,14 @@
 
 .architecture__room {
     width: 50%;
+    margin-top: 35px; /*Style 2*/
 }
 
+/* Room style 1 */
 .architecture__room img {
     object-fit: cover;
     width: 100%;
-    height: 60%;
+    height: 100%; /*Style 1: 60%*/
 }
 
 .architecture__room h5 {
@@ -343,6 +345,148 @@
 
 .architecture__room a:hover {
     text-decoration: underline;
+}
+
+/* Room style 2 */
+.room__content {
+    position: relative;
+    display: flex;
+    margin: 45px 0 0 35px;
+    background-color: #f2f2f2;
+    height: 200px;
+    transition: transform 0.3s linear;
+}
+
+.room__content:hover {
+    text-decoration: none !important;
+    transform: translateY(-10px);
+}
+
+.room__content:hover .room__title {
+    display: none;
+}
+
+.room__content:hover .room__desc {
+    opacity: 1;
+}
+
+.room__image-wrap {
+    flex: 1;
+}
+
+.room__image {
+    margin-top: -45px;
+    margin-left: -30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.room__info {
+    flex: 1;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.room__title p{
+    position: absolute;
+    margin-top: 1.5em;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.room__desc {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.room__desc h6{
+    font-size: 12px;
+    font-weight: 333;
+    margin: 1.5em 0 1em 0;
+    color: var(--text-color);
+}
+
+.room__desc p {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #454545;
+}
+
+.room__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -10px;
+    margin-bottom: -15px;
+    padding: 10px 15px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 444;
+    text-transform: uppercase;
+    width: auto;
+}
+
+/* Map */
+.map-container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+.map, .contact{
+    padding: 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/bg/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-form{
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    padding: 20px 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-form__title {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form__input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.contact-form__input:focus-visible {
+    outline-color: var(--primary-color);
+}
+
+.contact-form__btn {
+    margin: 10px 0;
+    padding: 0 20px;
 }
 
 

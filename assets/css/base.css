@@ -15,7 +15,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: "Haas Grot Text R Web", "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -133,4 +133,18 @@ input[type="checkbox"]{
     to {
         opacity: 100%;
     }
+}
+
+/* Show elements by scroll */
+
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all linear;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
