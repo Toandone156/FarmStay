@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Header start -->
-    <div id="header" class="header">
+    <!-- <div id="header" class="header">
         <div class="header-top">
             <ul class="header-top__menu-social">
                 <li class="menu-social__icon">
@@ -84,35 +84,103 @@
                 </ul>
             </div>
         </div>
+    </div> -->
+    <div class="navbar-wrap" id="navbar">
+        <div class="navbar grid wide">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#slideshow">Trang chủ</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#introduce">Giới thiệu</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#architecture">Trải nghiệm</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#map">Bản đồ</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#footer">Liên hệ</a>
+                </li>
+            </ul>
+            <ul class="navbar__contact">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__item-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__item-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__item-link">
+                        <ion-icon name="location"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <header class="header2">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2">
+                    <a href="index.htm" class="header2__link">
+                        <img class="header2__img" src="./assets/image/Logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col l-10">
+                    <ul class="header-navbar__list">
+                        <li class="header-navbar__item">
+                            <a href="#slideshow">Trang chủ</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#introduce">Giới thiệu</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#architecture">Trải nghiệm</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#map">Bản đồ</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#footer">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Header end -->
 
     <!-- Slideshow start -->
-    <div id="slideshow" class="slideshow-container">
+    <section id="slideshow" class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
+          <!-- <div class="numbertext">1 / 3</div> -->
           <img src="./assets/image/Slide/1.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
+          <!-- <div class="numbertext">2 / 3</div> -->
           <img src="./assets/image/Slide/2.jpg" style="width:100%">
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="./assets/image/Slide/3.jpg" style="width:100%">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="./assets/image/Slide/4.jpg" style="width:100%">
         </div>
         
         <div class="slideshow-container__ticket">
-            <h1>Coming soon...</h1>
+            <h1 class="reveal">Coming soon...</h1>
         </div>
-    </div>
+    </section>
     <!-- Slideshow end -->
 
     <!-- Introduce start -->
-    <div class="introduce-bg">
+    <section class="introduce-bg" id="introduce">
         <div id="introduce" class="introduce-container">
             <div class="introduce">
                 <h1 class="introduce__title reveal">FARMSTAY BA NA HILLS</h1>
@@ -135,27 +203,27 @@
                         <p>Đến với Sun World Ba Na Hills, du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo,
                              đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng 
                              không khí lễ hội ngập tràn.</p>
-                        <a href="#" class="introduce__desc-more">Xem thêm</a>
+                        <!-- <a href="#" class="introduce__desc-more">Xem thêm</a> -->
                     </div>
         
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Introduce end -->
 
-    <div class="architecture">
+    <section class="architecture" id = "architecture">
         <div class="grid wide">
-            <div class="architecture__introduce-wrap row reveal" id = "architecture">
+            <div class="architecture__introduce-wrap row reveal">
                 <div class="architecture__introduce col l-12">
                     <h1>FarmStay Architecture</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae itaque at ex consequuntur, dolore deserunt illo, 
                         eaque vitae blanditiis dolorum rem adipisci quidem qui quibusdam aperiam nemo, unde inventore.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="architecture__room col l-6 reveal">
-                    <a href="#" class="room__content">
+            <div class="row reveal">
+                <div class="architecture__room col l-6">
+                    <a class="room__content">
                         <div class="room__image-wrap">
                             <div class="room__image">
                                 <img src="./assets/image/Slide/1.jpg" alt="Room image">
@@ -176,8 +244,30 @@
                         </div>
                     </a>
                 </div>
-                <div class="architecture__room col l-6 reveal">
-                    <a href="#" class="room__content">
+                <div class="architecture__room col l-6">
+                    <a class="room__content">
+                        <div class="room__image-wrap">
+                            <div class="room__image">
+                                <img src="./assets/image/Slide/2.jpg" alt="Room image">
+                            </div>
+                        </div>
+                        <div class="room__info">
+                            <div class="room__title">
+                                <p>Name of room</p>
+                            </div>
+                            <div class="room__desc">
+                                <h6>Name of room</h6>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate porro eum voluptatum ex temporibus quis? 
+                                    Ut doloremque accusantium quaerat quia error natus, perferendis nemo dolore aliquid, vero consequuntur eius debitis.</p>
+                                <div class="room__btn btn btn--no-margin">
+                                    <span>Discover more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="architecture__room col l-6">
+                    <a class="room__content">
                         <div class="room__image-wrap">
                             <div class="room__image">
                                 <img src="./assets/image/Slide/1.jpg" alt="Room image">
@@ -198,30 +288,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="architecture__room col l-6 reveal">
-                    <a href="#" class="room__content">
-                        <div class="room__image-wrap">
-                            <div class="room__image">
-                                <img src="./assets/image/Slide/1.jpg" alt="Room image">
-                            </div>
-                        </div>
-                        <div class="room__info">
-                            <div class="room__title">
-                                <p>Name of room</p>
-                            </div>
-                            <div class="room__desc">
-                                <h6>Name of room</h6>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate porro eum voluptatum ex temporibus quis? 
-                                    Ut doloremque accusantium quaerat quia error natus, perferendis nemo dolore aliquid, vero consequuntur eius debitis.</p>
-                                <div class="room__btn btn btn--no-margin">
-                                    <span>Discover more</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="architecture__room col l-6 reveal">
-                    <a href="#" class="room__content">
+                <div class="architecture__room col l-6">
+                    <a class="room__content">
                         <div class="room__image-wrap">
                             <div class="room__image">
                                 <img src="./assets/image/Slide/1.jpg" alt="Room image">
@@ -252,10 +320,10 @@
                 </div> -->
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Map -->
-    <div class=" grid map-container" id="map">
+    <section class=" grid map-container" id="map">
         <div class="col l-6 map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61373.51696232186!2d107.99453199966409!3d15.969478738831627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141f7c18de2136d%3A0xf8672d6cd5505d13!2zSMOyYSBQaMO6LCBIw7JhIFZhbmcsIMSQw6AgTuG6tW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1654507411807!5m2!1svi!2s" 
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -271,11 +339,11 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer-container" id = "footer">
-        <div class="footer">
+    <section class="footer-container" id = "footer">
+        <div class="footer reveal">
             <div class="footer__logo">
                 <img src="./assets/image/Logo/logo.png" alt="Logo">
             </div>
@@ -310,11 +378,26 @@
                 <p>&copy; <a href="https://vitraco.vip/">Vitraco</a>. All Rights Reserved. Designed by <a href="https://facebook.com">Team Thoáng</a>
             </div>
         </div>
-    </div>
+    </section>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top" class = "UpBtn btn btn--no-margin">
         <ion-icon name="caret-up-outline"></ion-icon>
     </button>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
     <script src="./assets/js/slider.js"></script>
 </body>
 </html>
