@@ -240,7 +240,7 @@
     transform: scale(1.3);
 }
 
-.header-navbar__item:hover:after {
+/* .header-navbar__item:hover:after {
     content: "";
     position: absolute;
     background-color: var(--primary-color);
@@ -248,7 +248,7 @@
     bottom: -2px;
     width: 100%;
     height: 2px;
-}
+} */
 
 
 
