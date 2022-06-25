@@ -62,7 +62,7 @@ input[type="checkbox"]{
 
 ::selection {
     background-color: var(--primary-color);
-    color: #fce4ed;
+    color: #fff;
 }
 
 /* Box drop */
