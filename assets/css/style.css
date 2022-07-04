@@ -642,6 +642,7 @@
     width: 200px;
     height: auto;
     object-fit: cover;
+    margin: 20px;
 }
 
 .footer__contact {

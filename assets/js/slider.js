@@ -1,3 +1,5 @@
+//Base
+NodeList.prototype.indexOf = Array.prototype.indexOf;
 // Slideshow
 let slideIndex = 0;
 showSlides();
@@ -88,21 +90,23 @@ var body = document.querySelector("body");
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img_links = document.querySelectorAll(".room__content");
+var img_links = document.querySelectorAll(".room__content");//for line 128
+
+
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-for(var i = 0; i < img_links.length; i++){
-  img_links[i].onclick = function(){
-    var img = this.getElementsByTagName("img")[0];
-    var title = this.querySelector(".room__desc p");
-    modal.style.display = "flex";
-    modalImg.src = img.src;
-    captionText.innerHTML = title.innerHTML;
-    navbar.style.display = "none";
-    // Prevent scroll
-    body.style.overflow="hidden";
-  }
-}
+// for(var i = 0; i < img_links.length; i++){
+//   img_links[i].onclick = function(){
+//     var img = this.getElementsByTagName("img")[0];
+//     var title = this.querySelector(".room__desc p");
+//     modal.style.display = "flex";
+//     modalImg.src = img.src;
+//     captionText.innerHTML = title.innerHTML;
+//     navbar.style.display = "none";
+//     // Prevent scroll
+//     body.style.overflow="hidden";
+//   }
+// }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -114,3 +118,80 @@ span.onclick = function() {
   // Enable scroll
   body.style.overflow="auto";
 }
+
+//Room slide
+let data = [
+  [ ["./assets/image/room_slide/Lodging/dorm2.jpg", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos provident nulla et of"],
+    ["./assets/image/room_slide/Lodging/bungalow.jpg", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos provident nulla et of"], 
+    ["./assets/image/room_slide/Lodging/campsite.jpg", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos provident nulla et of"]],
+  [],
+  [],
+  []
+]
+
+let sliderImages = document.querySelectorAll(".slide"),
+arrowLeft = document.querySelector("#arrow-left"),
+arrowRight = document.querySelector("#arrow-right"),
+current = 0;
+
+for(var i = 0; i < img_links.length; i++){
+  img_links[i].onclick = function(){
+    let index = img_links.indexOf(this);
+    var sliderImages = data[index];
+    console.warn(sliderImages);
+    var img = sliderImages[0][0];
+    var title = sliderImages[0][1];
+    console.warn(title);
+    modal.style.display = "flex";
+    modalImg.src = img;
+    captionText.innerHTML = title;
+    navbar.style.display = "none";
+    // Prevent scroll
+    body.style.overflow="hidden";
+    startSlide();
+  }
+}
+
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+  
+// Initial slide
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+  
+// Show previous
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+  
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+  
+// Left arrow click
+arrowLeft.addEventListener("click", function () {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+  
+// Right arrow click
+arrowRight.addEventListener("click", function () {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+  
+// startSlide();

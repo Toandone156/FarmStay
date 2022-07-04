@@ -17,6 +17,7 @@ html {
     box-sizing: border-box;
     font-family: "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
 }
 
 ul{
