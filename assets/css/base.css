@@ -3,7 +3,7 @@
     --header-nav-height: 40px;
     --header-height: var(--header-nav-height) + var(--header-top-height);
     --text-color: #6e6d7a;
-    --primary-color: #876445;
+    --primary-color: #016735;
     --second-color: #CA965C;
     --third-color: #EEC373;
     --fourth-color: #F4DFBA;
@@ -151,7 +151,6 @@ input[type="checkbox"]{
 
 /* Modal */
 .modal {
-    display: none; /* Hidden by default*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 30px; /*Location of the box */
@@ -162,6 +161,9 @@ input[type="checkbox"]{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    display: none; /*Hide by default*/
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Modal Content (Image) */
@@ -182,6 +184,28 @@ input[type="checkbox"]{
     text-align: center;
     color: #ccc;
     padding: 10px 0;
+  }
+
+  /* Arrow style */
+  .arrow {
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  #arrow-left {
+    /* border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent transparent; */
+    left: 0;
+    padding-left: 20px;
+  }
+    
+  #arrow-right {
+    /* border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff; */
+    right: 0;
+    padding-right: 20px;
   }
   
   /* Add Animation - Zoom in the Modal */
