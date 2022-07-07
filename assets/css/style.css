@@ -154,7 +154,7 @@
     position: fixed;
     width: 100%;
     z-index: 11;
-    background-color: var(--primary-color);
+    background-color: var(--navbar-color);
     box-shadow: 0 0 20px var(--fourth-color);
     transition: all 0.1s linear;
     opacity: 0;
@@ -698,7 +698,11 @@
 
 .footer-container {
     padding: 50px;
-    background-color: var(--fourth-color);
+    /* background-color: var(--fourth-color); */
+    background-image: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 
 .footer {
@@ -757,12 +761,11 @@
 }
 
 .footer__copyright {
-    color: #454545;
     font-size: 15px;
 }
 
 .footer__copyright a {
-    color: var(--primary-color);
+    color: var(--second-color);
 }
 
 .footer__copyright a:hover {
