@@ -189,9 +189,9 @@ for(var i = 0; i < img_links.length; i++){
     });
       
     // Right arrow click
-    arrowRight.addEventListener("click", function () {
+    arrowRight.addEventListener("click", function (){
       let sliderImages = document.querySelectorAll(".slide");
-      if (current === sliderImages.length - 1) {
+      if (current === (sliderImages.length - 1)) {
         current = -1;
       }
       console.warn(slideRight(sliderImages));

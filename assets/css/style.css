@@ -559,6 +559,76 @@
     width: auto;
 }
 
+/* Services */
+.services {
+
+}
+
+.services-header {
+    display: flex;
+    justify-content: center;
+}
+
+.services-header-wrap {
+    margin: 50px 0;
+    text-align: center;
+    max-width: 70%;
+}
+
+.services-header__title {
+    font-size: 40px;
+    font-weight: 333;
+    text-transform: capitalize;
+}
+
+.services-header__desc {
+    font-size: 16px;
+    font-weight: 333;
+    color:#454545;
+}
+
+.services-body {
+    margin-bottom: 100px;
+}
+
+.services-item {
+    height: 300px;
+    transition: all 0.8s ease-in-out;
+}
+
+.services-item:hover {
+    z-index: 1;
+    transform: scale(1.1);
+    height: 400px;
+}
+
+.services-item__image {
+    height: 100%;
+}
+
+.services-item__image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.services-body .services-item .services-item__text {
+    background-color: #f9f9f9;
+    padding: 20px 50px;
+}
+
+.services-item__text-title {
+    font-size: 22px;
+    font-weight: 666;
+    color: #454545;
+}
+
+.services-item__text-desc {
+    font-size: 17px;
+    color: #454545;
+}
+
+
 /* Map */
 .map-container {
     display: flex;
