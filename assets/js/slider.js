@@ -133,7 +133,7 @@ let data = [
   [ ["./assets/image/room_slide/Restaurant/res1.jpg",
       "The restaurant serves breakfast in the morning. Lunch and dinner are served in the form of à la carte, featuring the specialties of the Vietnamese people." + 
       "In addition, the restaurant also serves BBQ with dishes such as chicken, pork, grilled vegetables, etc. for guests to camp or experience the service at the restaurant."],
-    ["./assets/image/room_slide/Restaurant/res2.jfif",
+    ["./assets/image/room_slide/Restaurant/res2.jpg",
       "Located in the center of the farmstay, the design and construction help visitors have a wide view of the garden and fruit garden. "+
       "There is also a cafe, bringing a relaxing feeling close to nature, serving organic drinks and detox drinks. Every Saturday there will be a music show"]],
   [ ["./assets/image/room_slide/Agriculture/agriculture1.jpg",
