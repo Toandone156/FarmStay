@@ -153,7 +153,7 @@ let data = [
       "The Chilling World Farmstay will also have areas for raising animals such as king chickens (Dong Tao chickens), peacocks and free-range pigs."]]
 ]
 
-var arrowLeft = document.querySelector("#arrow-left"),
+let arrowLeft = document.querySelector("#arrow-left"),
 arrowRight = document.querySelector("#arrow-right"),
 current = 0;
 
@@ -169,7 +169,6 @@ for(var i = 0; i < img_links.length; i++){
     }
 
     let sliderImages = document.querySelectorAll(".slide");
-    console.warn(sliderImages)
     
     //unhide model
     modal.style.display = "flex";
@@ -178,24 +177,6 @@ for(var i = 0; i < img_links.length; i++){
     body.style.overflow="hidden";
     startSlide(sliderImages);
 
-    //Arrow
-    // Left arrow click
-    arrowLeft.addEventListener("click", function () {
-      let sliderImages = document.querySelectorAll(".slide");
-      if (current === 0) {
-        current = sliderImages.length;
-      }
-      slideLeft(sliderImages);
-    });
-      
-    // Right arrow click
-    arrowRight.addEventListener("click", function (){
-      let sliderImages = document.querySelectorAll(".slide");
-      if (current === (sliderImages.length - 1)) {
-        current = -1;
-      }
-      console.warn(slideRight(sliderImages));
-    });
   }
 }
 
@@ -207,7 +188,6 @@ function reset(sliderImages) {
   
 // Initial slide
 function startSlide(sliderImages) {
-  console.warn(sliderImages);
   current = 0;
   reset(sliderImages);
   sliderImages[0].style.display = "block";
@@ -223,11 +203,28 @@ function slideLeft(sliderImages) {
 // Show next
 function slideRight(sliderImages) {
   reset(sliderImages);
-  console.warn(current);
   sliderImages[current + 1].style.display = "block";
   current++;
-  return 0;
 }
+
+//Arrow
+  // Left arrow click
+  arrowLeft.addEventListener("click", function () {
+    let sliderImages = document.querySelectorAll(".slide");
+    if (current === 0) {
+      current = sliderImages.length;
+    }
+    slideLeft(sliderImages);
+  });
+    
+  // Right arrow click
+  arrowRight.addEventListener("click", function (){
+    let sliderImages = document.querySelectorAll(".slide");
+    if (current === (sliderImages.length - 1)) {
+      current = -1;
+    }
+    slideRight(sliderImages);
+  });
 
 // addSlide
 function addSlide(img, title){
