@@ -122,21 +122,26 @@ span.onclick = function() {
 
 //Room slide
 let data = [
-  [ ["./assets/image/room_slide/Lodging/dorm1.jpg", 
+  [ //Lodging
+    ["./assets/image/room_slide/Lodging/dorm.jpg", 
       "The dorm area has 2 floors and 12 rooms with the capacity up to 72 guests, with the most minimalist and pure Vietnamese architecture, area from 25 - 35 sqm"],
-    ["./assets/image/room_slide/Lodging/bungalow.jpg", 
+    ["./assets/image/room_slide/Lodging/bugalow.jpg", 
       "With 6 bungalows located in  the most  prime location in the farmstay, each unit's area will be distinct from the rest, providing visitors with solitude and the" + 
         "most tranquil feeling with a view of the stream and Ba Na mountain. Each bungalow is 45 square meters and can accommodate up to three individuals, making it appropriate for both long and short stays."], 
-    ["./assets/image/room_slide/Lodging/campsite.jpg", 
+    ["./assets/image/room_slide/Lodging/camp.jpg", 
       "With some fun activities and group time, The Chilling World Farmstay is suitable for picnics and vacations for the majority of teenagers. The maximum capacity for" + 
         "a tent is 2-3 people"]],
-  [ ["./assets/image/room_slide/Restaurant/res1.jpg",
+  [ //Restaurant
+    ["./assets/image/room_slide/Restaurant/res1.jpg",
       "The restaurant serves breakfast in the morning. Lunch and dinner are served in the form of à la carte, featuring the specialties of the Vietnamese people." + 
       "In addition, the restaurant also serves BBQ with dishes such as chicken, pork, grilled vegetables, etc. for guests to camp or experience the service at the restaurant."],
     ["./assets/image/room_slide/Restaurant/res2.jpg",
       "Located in the center of the farmstay, the design and construction help visitors have a wide view of the garden and fruit garden. "+
-      "There is also a cafe, bringing a relaxing feeling close to nature, serving organic drinks and detox drinks. Every Saturday there will be a music show"]],
-  [ ["./assets/image/room_slide/Agriculture/agriculture1.jpg",
+      "There is also a cafe, bringing a relaxing feeling close to nature, serving organic drinks and detox drinks. Every Saturday there will be a music show"],
+    ["./assets/image/room_slide/Restaurant/bbq.jpg",
+      "The restaurant also serves BBQ with dishes such as chicken, pork, grilled vegetables, sea food etc. for guests to camp or experience the service at the restaurant."]],
+  [ //Agriculture
+    ["./assets/image/room_slide/Agriculture/agriculture1.jpg",
       "With a large area divided into separate zones, visitors will be guided and experience a day of becoming a farmer at farmstay, including gardening, watering, planting, and taking care of vegetable gardens. "+
       "Visitors can also gain knowledge of orchid varieties, care techniques, and especially the stories of each orchid."],
     ["./assets/image/room_slide/Agriculture/agriculture2.jpg",
@@ -145,7 +150,8 @@ let data = [
       "Mango garden"],
     ["./assets/image/room_slide/Agriculture/agriculture4.jpg",
       "Orchid garden"]],
-  [ ["./assets/image/room_slide/Breeding/breeding1.jpg",
+  [ //Breeding
+    ["./assets/image/room_slide/Breeding/breeding1.jpg",
       "The Chilling World Farmstay will also have areas for raising animals such as king chickens (Dong Tao chickens), peacocks and free-range pigs."],
     ["./assets/image/room_slide/Breeding/breeding2.jpg",
       "The Chilling World Farmstay will also have areas for raising animals such as king chickens (Dong Tao chickens), peacocks and free-range pigs."],

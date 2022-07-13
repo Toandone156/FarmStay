@@ -33,6 +33,7 @@ html {
     font-family: "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 30px;
+    font-size: 62.5%;
 }
 
 ul{
@@ -193,6 +194,7 @@ input[type="checkbox"]{
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
+    font-size: 1.5rem;
     margin: auto;
     display: block;
     width: 80%;
