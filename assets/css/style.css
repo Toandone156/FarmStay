@@ -336,7 +336,8 @@
 .introduce-bg {
     width: 100%;
     height: 100%;
-    background-image: url(../image/bg2.png);
+    background-image: url(../image/bg3.jpg);
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -346,7 +347,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-image: url(../image/bg.png);
+    background-image: url(../image/bg.jpg);
+    background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
 }
