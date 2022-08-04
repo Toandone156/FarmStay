@@ -304,18 +304,32 @@
     width: 100%;
     top: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.slideshow-container__ticket h1{
-    font-family: 'Open Sans', sans-serif;
+.slideshow-container__sologan{
     color: #fff;
+}
+
+.slideshow-container__sologan h1{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     font-weight: 777;
     letter-spacing: 10px;
     text-transform: uppercase;
-    border-bottom: 5px solid #fff;
+    /* border-bottom: 5px solid #fff; */
+}
+
+.slideshow-container__sologan p {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 777;
+    letter-spacing: 5px;
 }
 
 /* Introduce */
